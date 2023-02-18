@@ -56,8 +56,8 @@ document.getElementById('rectcalculate').addEventListener('click',function(){
 document.getElementById('parellallo').addEventListener('click',function(){
     const parellaloField=document.getElementById('parainput1');
     const newparellaloFieldString= parellaloField.value;
-    const newparellaloAmount=parseFloat(new parellaloFieldString);
-    parellaloField.value=new parellaloAmount;
+    const newparellaloAmount=parseFloat(newparellaloFieldString);
+    parellaloField.value=newparellaloAmount;
     parellaloField.value='';
     
       const  parellaloAreaCalculate=document.getElementById('parainput2');
@@ -78,7 +78,7 @@ document.getElementById('rhombo').addEventListener('click',function(){
     const rhomboField=document.getElementById('rhomboinput1');
     const newrhomboFieldString= rhomboField.value;
     const newrhomboAmount=parseFloat(newrhomboFieldString);
-    rhomboField.value=new rhomboAmount;
+    rhomboField.value=newrhomboAmount;
     rhomboField.value='';
     
       const  rhomboAreaCalculate=document.getElementById('rhomboinput2');
@@ -99,7 +99,7 @@ document.getElementById('rhombo').addEventListener('click',function(){
 document.getElementById('pentabutton').addEventListener('click',function(){
     const pentaField=document.getElementById('pentainput1');
     const newpentaFieldString= pentaField.value;
-    const newrhomboAmount=parseFloat(newrhomboFieldString);
+    const newpentaAmount=parseFloat(newpentaFieldString);
     pentaField.value=new rhomboAmount;
     pentaField.value='';
     
@@ -109,9 +109,29 @@ document.getElementById('pentabutton').addEventListener('click',function(){
     
     const  pentaAreaCalculates=parseFloat( pentaAreaCalculateString);
     const addingp=6;
-    const addingdb=10;
+    const addingb=10;
     const letsCalculate=0.5*addingp*addingb;
     pentaAreaCalculate.value=letsCalculate;
+     const arearesult=document.getElementById('area');
+    const result=arearesult+letsCalculate;
+
+});
+document.getElementById('ellipsebutton').addEventListener('click',function(){
+    const ellipseField=document.getElementById('ellipseinput');
+    const newellipseFieldString= ellipseField.value;
+    const newellipseAmount=parseFloat(newellipseFieldString);
+    ellipseField.value=newellipseAmount;
+    ellipseField.value='';
+    
+      const  ellipseAreaCalculate=document.getElementById('ellipsearea');
+    
+     const  ellipseAreaCalculateString=ellipseAreaCalculate.value;
+    
+    const  ellipseAreaCalculates=parseFloat( ellipseAreaCalculateString);
+    const addinga=10;
+    const addingb=4;
+    const letsCalculate=3.14*addinga*addingb;
+    ellipseAreaCalculate.value=letsCalculate;
      const arearesult=document.getElementById('area');
     const result=arearesult+letsCalculate;
 

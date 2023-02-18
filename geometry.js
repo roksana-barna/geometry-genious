@@ -18,7 +18,7 @@ triangleField2.value='';
 const triangleAreaCalculates=parseFloat(triangleAreaCalculateString);
 const addingB=newTriangleAmount+triangleAreaCalculates;
 const addinH=newTriangleAmount2nd+triangleAreaCalculates;
-const letsCalculate=addingB*addinH;
+const letsCalculate=0.5*addingB*addinH;
 triangleAreaCalculate.innerText=letsCalculate;
  const arearesult=document.getElementById('area');
 const result=arearesult+letsCalculate;
@@ -44,9 +44,9 @@ document.getElementById('rectcalculate').addEventListener('click',function(){
      const triangleAreaCalculateString=triangleAreaCalculate.innerText;
     
     const triangleAreaCalculates=parseFloat(triangleAreaCalculateString);
-    const addingB=newTriangleAmount+triangleAreaCalculates;
-    const addinH=newTriangleAmount2nd+triangleAreaCalculates;
-    const letsCalculate=addingB*addinH;
+    const addingw=newTriangleAmount+triangleAreaCalculates;
+    const addinl=newTriangleAmount2nd+triangleAreaCalculates;
+    const letsCalculate=addingw*addinl;
     triangleAreaCalculate.innerText=letsCalculate;
      const arearesult=document.getElementById('area');
     const result=arearesult+letsCalculate;

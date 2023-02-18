@@ -27,57 +27,92 @@ const result=arearesult+letsCalculate;
 
 // rectangulae section
 document.getElementById('rectcalculate').addEventListener('click',function(){
-    const triangleField=document.getElementById('rectangleinput1');
-    const newTriangleFieldString=triangleField.value;
-    const newTriangleAmount=parseFloat(newTriangleFieldString);
-    triangleField.value=newTriangleAmount;
-    triangleField.value='';
+    const rectangleField=document.getElementById('rectangleinput1');
+    const newrectangleFieldString=rectangleField.value;
+    const newTriangleAmount=parseFloat(newrectangleFieldString);
+    rectangleField.value=newTriangleAmount;
+    rectangleField.value='';
     
-    const triangleField2=document.getElementById('rectangleinput2');
-    const newTriangleFieldString2nd=triangleField2.value;
-    const newTriangleAmount2nd=parseFloat(newTriangleFieldString2nd);
-    triangleField2.value=newTriangleAmount2nd;
-    triangleField2.value='';
+    const rectangleField2=document.getElementById('rectangleinput2');
+    const newrectangleFieldString2nd=rectangleField2.value;
+    const newrectangleAmount2nd=parseFloat(newrectangleFieldString2nd);
+    rectangleField2.value=newrectangleAmount2nd;
+    rectangleField2.value='';
     
-      const triangleAreaCalculate=document.getElementById('rectArea');
+      const rectangleAreaCalculate=document.getElementById('rectArea');
     
-     const triangleAreaCalculateString=triangleAreaCalculate.innerText;
+     const rectangleAreaCalculateString=rectangleAreaCalculate.innerText;
     
-    const triangleAreaCalculates=parseFloat(triangleAreaCalculateString);
-    const addingw=newTriangleAmount+triangleAreaCalculates;
-    const addinl=newTriangleAmount2nd+triangleAreaCalculates;
+    const rectangleAreaCalculates=parseFloat(rectangleAreaCalculateString);
+    const addingw=newrectangleAmount+rectangleAreaCalculates;
+    const addinl=newrectangleAmount2nd+rectangleAreaCalculates;
     const letsCalculate=addingw*addinl;
-    triangleAreaCalculate.innerText=letsCalculate;
+    rectangleAreaCalculate.innerText=letsCalculate;
      const arearesult=document.getElementById('area');
     const result=arearesult+letsCalculate;
 
 });
 // parallaologram
 document.getElementById('parellallo').addEventListener('click',function(){
-    const triangleField=document.getElementById('parainput1');
-    const newTriangleFieldString=triangleField.value;
-    const newTriangleAmount=parseFloat(newTriangleFieldString);
-    triangleField.value=newTriangleAmount;
-    triangleField.value='';
+    const parellaloField=document.getElementById('parainput1');
+    const newparellaloFieldString= parellaloField.value;
+    const newparellaloAmount=parseFloat(new parellaloFieldString);
+    parellaloField.value=new parellaloAmount;
+    parellaloField.value='';
     
-    const triangleField2=document.getElementById('parainput2');
-    const newTriangleFieldString2nd=triangleField2.value;
-    const newTriangleAmount2nd=parseFloat(newTriangleFieldString2nd);
-    triangleField2.value=newTriangleAmount2nd;
-    triangleField2.value='';
+      const  parellaloAreaCalculate=document.getElementById('parainput2');
     
-      const triangleAreaCalculate=document.getElementById('paraArea');
+     const  parellaloAreaCalculateString=parellaloAreaCalculate.value;
     
-     const triangleAreaCalculateString=triangleAreaCalculate.value;
-    
-    const triangleAreaCalculates=parseFloat(triangleAreaCalculateString);
+    const  parellaloAreaCalculates=parseFloat( parellaloAreaCalculateString);
     const addingb=10;
     const addinh=12;
     const letsCalculate=addingb*addinh;
-    triangleAreaCalculate.value=letsCalculate;
+    parellaloAreaCalculate.value=letsCalculate;
+     const arearesult=document.getElementById('area');
+    const result=arearesult+letsCalculate;
+
+});
+// 
+document.getElementById('rhombo').addEventListener('click',function(){
+    const rhomboField=document.getElementById('rhomboinput1');
+    const newrhomboFieldString= rhomboField.value;
+    const newrhomboAmount=parseFloat(newrhomboFieldString);
+    rhomboField.value=new rhomboAmount;
+    rhomboField.value='';
+    
+      const  rhomboAreaCalculate=document.getElementById('rhomboinput2');
+    
+     const  rhomboAreaCalculateString=rhomboAreaCalculate.value;
+    
+    const  rhomboAreaCalculates=parseFloat( rhomboAreaCalculateString);
+    const addingd1=16;
+    const addingd2=8;
+    const letsCalculate=0.5*addingd1*addingd2;
+    rhomboAreaCalculate.value=letsCalculate;
      const arearesult=document.getElementById('area');
     const result=arearesult+letsCalculate;
 
 });
 
+// pentagon
+document.getElementById('pentabutton').addEventListener('click',function(){
+    const pentaField=document.getElementById('pentainput1');
+    const newpentaFieldString= pentaField.value;
+    const newrhomboAmount=parseFloat(newrhomboFieldString);
+    pentaField.value=new rhomboAmount;
+    pentaField.value='';
+    
+      const  pentaAreaCalculate=document.getElementById('pentainput2');
+    
+     const  pentaAreaCalculateString=pentaAreaCalculate.value;
+    
+    const  pentaAreaCalculates=parseFloat( pentaAreaCalculateString);
+    const addingp=6;
+    const addingdb=10;
+    const letsCalculate=0.5*addingp*addingb;
+    pentaAreaCalculate.value=letsCalculate;
+     const arearesult=document.getElementById('area');
+    const result=arearesult+letsCalculate;
 
+});

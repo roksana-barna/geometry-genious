@@ -29,32 +29,32 @@
     <main>
         <section>
             <div>
-            <div  class="w-8/12 mx-64 grid  gap-4 grid-cols-4 justify-items-center">
-                <div class="border border-solid p-3">
+            <div  class="w-8/12 mx-64 grid  gap-4 grid-cols-4   justify-items-center">
+                <div class="border border-solid hover:border-sky-600 p-3">
                 <div class="px-8 text-center">
                     <img  src="images/triangle.png">
                     <h3 class="font-bold p-2 mt-3 text-2xl">Triangle</h3>
-                    <p>Area(A)=0.5*b*h</p>
-                    <input class="w-12 p-2 mt-3  bg-gray-200 py-0 px-1"type="text" placeholder="b">cm
-                    <input  class="w-12 p-2 mt-3  bg-gray-200 py-0 px-1 "type="text"  placeholder="h">cm
-                    <button class="bg-blue-500 text-white py-2 mt-8 w-full rounded-2xl">Calculate</button>
+                    <p id="triangleArea">Area(A)=0.5*b*h</p>
+                    <input  id="b-cm"class="w-12 p-2 mt-3  bg-gray-200 py-0 px-1"type="text" placeholder="b">cm
+                    <input id="h-cm" class="w-12 p-2 mt-3  bg-gray-200 py-0 px-1 "type="text"  placeholder="h">cm
+                    <button id="trianglecalculate" class="bg-blue-500 text-white py-2 mt-8 w-full rounded-2xl">Calculate</button>
 </div>
                 </div>
-                <div class="border border-solid ">
+                <div class="border border-solid hover:border-sky-600 ">
                 <div class="px-8 text-center mt-8 ">
                     <img  src="images/rectangle.png">
                     <h3 class="font-bold p-2 mt-3 text-2xl">Rectangle</h3>
-                    <p>Area(A)=w*l</p>
-                    <input class="w-12 p-2 mt-3  bg-gray-200 py-0 px-1"type="text" placeholder="w">cm
-                    <input  class="w-12 p-2 mt-3  bg-gray-200 py-0 px-1 "type="text"  placeholder="l">cm
-                    <button class="bg-blue-500 text-white py-2 mt-8 w-full rounded-2xl">Calculate</button>
+                    <p id="rectarea">Area(A)=w*l</p>   I
+                    <input  id="rectangleinput1"class="w-12 p-2 mt-3  bg-gray-200 py-0 px-1"type="text" placeholder="w">cm
+                    <input id="rectangleinput2" class="w-12 p-2 mt-3  bg-gray-200 py-0 px-1 "type="text"  placeholder="l">cm
+                    <button id="rectcalculate" class="bg-blue-500 text-white py-2 mt-8 w-full rounded-2xl">Calculate</button>
 </div>
                 </div>
 
-                <div class="border border-solid">
+                <div class="border border-solid hover:border-sky-600">
                 <div class="px-8 text-center mt-16">
                     <img  src="images/parallelogram.png">
-                    <h3 class="font-bold p-2 mt-3 text-2xl">parallellogram</h3>
+                    <h3 class="font-bold p-2 mt-3 text-2xl">Parallellogram</h3>
                     <p>Area(A)=b*h</p>
                     <p>b=10cm,h=12cm</p>
                     
@@ -68,7 +68,7 @@
     
     <div class="border border-solid w-10/12">
         <div class="px-8 text-center mt-4 underline font-bold">
-            <p>Area Calculation</p>
+            <p id="area">Area Calculation</p>
             
 
     
@@ -79,10 +79,10 @@
 
             
             <div class="w-6/12 mx-64 gap-1 grid grid-cols-3   mt-3 justify-items-center">
-                <div class="border border-solid">
+                <div class="border border-solid hover:border-sky-600">
                 <div class="px-8 text-center mt-8">
                     <img  src="images/rhombus.png">
-                    <h3 class="font-bold p-2 mt-3 text-2xl">rhombus</h3>
+                    <h3 class="font-bold p-2 mt-3 text-2xl">Rhombus</h3>
                     <p>Area(A)=0.5*d1*d2</p>
                     <p>d1=16cm,d2=8cm</p>
             
@@ -90,10 +90,10 @@
                 </div>
             </div>
                 
-                <div class="border border-solid">
+                <div class="border border-solid hover:border-sky-600">
                 <div class="px-8 text-center mt-6">
                     <img  src="images/pentagon.png">
-                    <h3 class="font-bold p-2 mt-3 text-2xl">pentagon</h3>
+                    <h3 class="font-bold p-2 mt-3 text-2xl">Pentagon</h3>
                     <p>Area(A)=0.5*p*b</p>
                     <p>p=6cm,b=10cm</p>
                     
@@ -102,11 +102,11 @@
 
                 </div>
                 </div>
-                 <div class="border border-solid">
+                 <div class="border border-solid hover:border-sky-600">
                   <div class="px-8 text-center mt-16">
                     <img  src="images/ellipse.png">
                     <h3 class="font-bold p-2 mt-3 text-2xl">Ellipse</h3>
-                    <p>Area(A)=3.14*a*b
+                    <p>Area (A) =3.14*ab</p>
                     <p>a=10cm,b=4cm</p>
                     
 
@@ -123,6 +123,7 @@
 
 
     </main>
+    <script src="geometry.js"></script>
     
 </body>
 </html>

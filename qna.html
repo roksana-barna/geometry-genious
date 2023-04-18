@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>geometry genius assignment</title>
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header class="container mt-4 rounded">
+        <div class="d-flex justify-content-between">
+            <div>
+                <h3>Interactive</h3>
+                <p>Geometry Genius</p>
+            </div>
+            <div class="d-flex align-items-center">
+                <button id="home" class="btn btn-primary">Home</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mt-3">
+        <div class="item">
+            <h4>What is DOM and what is the purpose of DOM?</h4>
+            <p class="ms-3 border-start ps-2">
+                DOM means the Document Object Model.Dom is representation of web structure. It represent the web page as nodes and object. By DOM JS can interact with the web page.
+            </p>
+        </div>
+
+        <div class="item">
+            <h4>How will you select HTML elements using DOM? Name the DOM methods.</h4>
+            <div class="border-start ps-2 ms-3">
+                <p>
+                    By using document DOM can select html element. There are 5 way to select html document in DOM. They are:-
+                </p>
+                <ol>
+                    <li>getElementById()</li>
+                    <li>getElementsByClassName()</li>
+                    <li>getElementsByTagName()</li>
+                    <li>querySelector()</li>
+                    <li>querySelectorAll()</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="item">
+            <h4>What is event bubble?</h4>
+            <p class="ms-3 border-start ps-2">
+                Event bubble means event goes up from where a event happened. It always goes up as bubble. Event Bubbling is a concept in the DOM. This is the default behavior of events on elements unless stop the propagation.When an event happens on an element, it first runs the handlers on it, then on its parent, then all the way up on other ancestors.
+            </p>
+        </div>
+
+        <div class="item">
+            <h4>What is a callback function and why will you use it?</h4>
+            <p class="ms-3 border-start ps-2">
+                A callback function is a function that is passed as parameter for complete some action. The name of callback function is optional.
+            </p>
+        </div>
+    </main>
+
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/calculation.js"></script>
+    <script>
+        document.getElementById('home').addEventListener('click',function (){
+            window.location.href = "index.html";
+        });
+    </script>
+</body>
+</html>

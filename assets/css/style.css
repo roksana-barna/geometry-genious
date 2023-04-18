@@ -14,3 +14,6 @@ input{
     max-height: 38px;
     margin: 0 5px;
 }
+button{
+    font-size: 25px;
+}

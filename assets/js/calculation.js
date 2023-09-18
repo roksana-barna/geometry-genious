@@ -60,6 +60,22 @@ document.getElementById('hoverColor1').addEventListener('mouseover', function ()
     const ab = '#'+Math.random().toString(16).slice(2,8);
     document.getElementById('hoverColor1').style.backgroundColor = ab;
 })
+document.getElementById('hoverColors').addEventListener('mouseover', function (){
+    const ab = '#'+Math.random().toString(16).slice(2,8);
+    document.getElementById('hoverColors').style.backgroundColor = ab;
+})
+document.getElementById('hoverColorss').addEventListener('mouseover', function (){
+    const ab = '#'+Math.random().toString(16).slice(2,8);
+    document.getElementById('hoverColorss').style.backgroundColor = ab;
+})
+document.getElementById('hoverColored').addEventListener('mouseover', function (){
+    const ab = '#'+Math.random().toString(16).slice(2,8);
+    document.getElementById('hoverColored').style.backgroundColor = ab;
+})
+document.getElementById('hoverColoreds').addEventListener('mouseover', function (){
+    const ab = '#'+Math.random().toString(16).slice(2,8);
+    document.getElementById('hoverColoreds').style.backgroundColor = ab;
+})
 
 document.getElementById('triangleCalculate').addEventListener('click', function (){
     const firstInput = document.getElementById('triangleB').value;
